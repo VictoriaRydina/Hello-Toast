@@ -7,10 +7,11 @@
     tools:context="com.example.helloconstraint.MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_reset"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#AAAAAA"
+        android:onClick="reset"
         android:text="Zero"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
@@ -42,9 +43,9 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/show_count"
-        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button_reset"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button" />
+        app:layout_constraintStart_toStartOf="@+id/button_reset" />
 
     <TextView
         android:id="@+id/show_count"
@@ -63,7 +64,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button_reset"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.081" />
 
