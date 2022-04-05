@@ -39,9 +39,9 @@ class MainActivity : AppCompatActivity() {
         mCount += 1
         resetButton.setBackgroundColor(Color.RED)
         if (mCount % 2 == 0) {
-            countButton.setBackgroundColor(greenColor)
+            view.setBackgroundColor(greenColor)
         } else {
-            countButton.setBackgroundColor(Color.BLUE)
+            view.setBackgroundColor(Color.BLUE)
         }
         showCount.text = mCount.toString()
     }
