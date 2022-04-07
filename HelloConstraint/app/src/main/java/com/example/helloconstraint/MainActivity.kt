@@ -1,15 +1,13 @@
 package com.example.helloconstraint
 
-import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.Color
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import helloconstraint.R
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         val toast = Toast.makeText(this, R.string.toast_message,
             Toast.LENGTH_SHORT)
         toast.show()
+        val intent = Intent(this, SayHello::class.java)
+        intent.putExtra("count", showCount.text.toString());
+        startActivity(intent)
     }
 
     fun countUp(view: View) {

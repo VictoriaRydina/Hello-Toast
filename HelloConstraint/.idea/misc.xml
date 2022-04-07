@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/layout-land/activity_main.xml" value="0.16302083333333334" />
         <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22077922077922077" />
+        <entry key="app/src/main/res/layout/activity_say_hello.xml" value="0.15" />
       </map>
     </option>
   </component>
